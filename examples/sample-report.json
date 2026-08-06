@@ -43,7 +43,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "4d804ff9-ad0a-4e4f-9b45-253b0b464a92",
+      "finding_id": "94005baf-9b06-4476-9b61-f3af60b46139",
       "message": "Password age exceeds policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -58,7 +58,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "7826432a-a685-465c-9923-9050b536d411",
+      "finding_id": "4a4e5da2-a696-416c-af3b-f5c697fce01b",
       "message": "PasswordNotRequired enabled.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -73,7 +73,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "ee52f833-4e55-4ffd-89fb-fef33d6b587e",
+      "finding_id": "21ad59ef-3423-4b32-9e1e-c65d6f1a1693",
       "message": "PasswordNeverExpires outside approved service-account policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -88,7 +88,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "99a6c8f0-fdf3-4483-8e77-f89293900456",
+      "finding_id": "1fdd8550-f902-4359-9f2f-e1def7c84ee6",
       "message": "Enabled account inactive beyond threshold.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -103,7 +103,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "e6cdb7e3-9f6a-4675-880f-d52de9a9c91b",
+      "finding_id": "e782b609-857a-4087-aa02-ca867492c465",
       "message": "Enabled account never logged on beyond creation-age threshold.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -118,7 +118,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "e224f00e-ca4e-46df-a1eb-099e17e93ef4",
+      "finding_id": "8c89c585-e207-4e48-9e5a-9409b189e72d",
       "message": "Account cannot change password unexpectedly.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -133,7 +133,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "d118a463-9740-446d-978b-55ff8aedab87",
+      "finding_id": "056698db-282a-4ae3-8e13-57cfeb74a5d3",
       "message": "UPN missing.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -148,7 +148,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "1d607250-bf96-4034-8f9d-b3655b4b55da",
+      "finding_id": "0eaf8d31-c091-4122-919c-506967a46dd5",
       "message": "Password age exceeds policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -163,7 +163,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "c3c3ffee-a471-49ee-9e92-09e6e03f15ac",
+      "finding_id": "8dd7fde1-799d-4839-9204-5673a2be48f9",
       "message": "Account cannot change password unexpectedly.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -178,7 +178,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "e57d5b92-d241-45c6-a3d9-9ad5e873762c",
+      "finding_id": "bae04b7f-e4ab-432d-ad92-447a35502aaf",
       "message": "UPN missing.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -193,7 +193,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "415e88cf-eecb-4fd3-b317-80fe7abd0e95",
+      "finding_id": "6bdaefd2-45e7-4437-9abd-1cd73c32839b",
       "message": "Broad/generic administrative description heuristic matched.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -208,7 +208,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "eae25bdb-a3e0-4a00-b3cb-4480fd27d29a",
+      "finding_id": "0149f69a-3070-4b94-834d-04e453a0dbd6",
       "message": "Account has SPN but is not classified as approved service account.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -223,7 +223,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "5e44f031-b031-44ed-88cb-c6649a00f131",
+      "finding_id": "88c2e191-4e42-4fc7-9f20-c098b30d623f",
       "message": "Disabled account remains in security-sensitive groups.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -238,7 +238,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "67527ea9-2dfc-4bea-a27b-cacf30c0fc4d",
+      "finding_id": "654d5fd5-9966-4644-a97f-5bcf2d71f56c",
       "message": "SIDHistory present — requires migration context review.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -253,7 +253,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "d2797193-5359-4f67-bd99-e5fbe24b9a0e",
+      "finding_id": "768a41ab-0809-43ea-99a4-6fca22281bbe",
       "message": "Enabled account inactive beyond threshold.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -268,7 +268,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "cf50456e-d145-47bc-8ce0-f7a6640ea9e4",
+      "finding_id": "7e74a68b-43b3-4859-8dcc-837e9ba27a5b",
       "message": "Expired account remains enabled.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -283,7 +283,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "a9542bb0-c968-4672-b012-6038c00d25b2",
+      "finding_id": "98624a63-abad-42c7-8db0-dd8c4627995c",
       "message": "Password age exceeds policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -298,7 +298,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "1c86ee7b-8e38-4c62-8a5d-0bcafb57737c",
+      "finding_id": "26494d10-32e1-4c8b-86a6-5db2e973c4a4",
       "message": "Allowlisted descriptive attribute contains a credential-like clue. Matched value is redacted.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -313,7 +313,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "86d04fae-ff7b-4912-a330-ebd07036eb05",
+      "finding_id": "0332bf82-aed0-4122-ab2a-24a91e2ebd7d",
       "message": "Temporary/vendor-like account lacks expiration.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -328,7 +328,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "a54f0c1f-c445-4dee-8881-cb857837715c",
+      "finding_id": "ceb3f118-c977-4517-b447-5fa1c82f3c42",
       "message": "Reversible password encryption enabled.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -343,7 +343,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "4238f801-1032-4a24-a9ef-8469d4be08b4",
+      "finding_id": "dc6fc266-2962-4f56-8759-4f6f95da0412",
       "message": "Kerberos preauthentication not required.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -358,7 +358,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "17802225-5be6-4a27-86ca-3bd83814ae9d",
+      "finding_id": "3b5990a0-3234-4656-b2f6-a69fc8b367fa",
       "message": "DES-only Kerberos flag enabled.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -373,7 +373,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "1448ba95-4b18-4c9c-9ce3-98a0034b70c8",
+      "finding_id": "c3e13a71-8993-4e39-9ff2-7ea1263b4ad2",
       "message": "Account explicitly supports only legacy Kerberos encryption metadata.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -388,7 +388,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "16e8bc35-9875-4a0e-bd3b-018b9eb444f6",
+      "finding_id": "a0422c15-3366-49bd-a9bf-6a7792c49373",
       "message": "Enabled account inactive beyond threshold.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -403,7 +403,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "48ca1ec7-99aa-467c-8b8e-335ce0809657",
+      "finding_id": "4d0ca027-88f6-406f-b5b6-afc2a0c79b5e",
       "message": "Password age exceeds policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -418,7 +418,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "5056c386-8d3b-4d15-ae55-da89c83fd758",
+      "finding_id": "8d071739-6dbb-42a1-bd2b-91d04256c931",
       "message": "Allowlisted descriptive attribute contains a credential-like clue. Matched value is redacted.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -433,7 +433,7 @@
     {
       "category": "Account security",
       "evidence": {},
-      "finding_id": "b6087c5d-70ef-48d8-8a27-17915cb66ac8",
+      "finding_id": "ed4aad2a-b0bc-4728-904e-24493808ab3c",
       "message": "No clearly usable modern Kerberos encryption type in collected metadata.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -448,7 +448,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "837a34e8-9caa-4d58-8609-077bbced9111",
+      "finding_id": "872f3941-62e0-4300-b724-4b1dd375cf9e",
       "message": "Unexpected GenericAll over domain root.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -463,7 +463,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "6f05422e-5b47-4506-bd13-ca0e423afdb8",
+      "finding_id": "06df0896-183c-45e5-94e6-144b7b7130f4",
       "message": "Inherited ACE creates broad control over critical object.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -478,7 +478,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "57a32409-761c-4c73-8f06-2c4128776f18",
+      "finding_id": "d1d1f753-7c99-4405-a4b0-8ed3b3d4e310",
       "message": "Unexpected WriteDacl over domain root.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -493,7 +493,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "8a6b5de6-a323-466e-b280-34e5ad66cadc",
+      "finding_id": "59103ab9-30f7-4c72-bf91-ea50c1a59105",
       "message": "Unexpected WriteOwner over domain root.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -508,7 +508,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "1981b8be-4d7c-4e3a-9a53-2e1e14c9e6ab",
+      "finding_id": "1e3cbfb1-5196-4335-bf0d-b3f6a8486389",
       "message": "Critical object owner is unexpected.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -523,7 +523,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "92a11c3a-d993-4da5-b865-0a7e3034ca69",
+      "finding_id": "f560cd0b-a07f-4f1a-a08d-e806ec22dcfe",
       "message": "Principal has replication-change rights consistent with DCSync capability (defensive detection; no exploitation guidance).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -538,7 +538,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "7f180046-d4e5-443e-a9bc-ed069e2c2fd8",
+      "finding_id": "c6110b49-e6a4-4a30-97ec-5cc1e1d9c698",
       "message": "Unexpected principal controls AdminSDHolder.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -553,7 +553,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "51e5337e-79ab-4c0d-8799-cbf82575d6b3",
+      "finding_id": "64e5d103-7ab8-4cc1-bbd7-4385e1e8cfff",
       "message": "Unexpected principal can modify highest-privilege group membership.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -568,7 +568,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "fe1b476b-6ceb-4edc-b545-b63497f1a808",
+      "finding_id": "d14589c9-deda-4c60-b8e7-11b380997fee",
       "message": "Unexpected principal can reset privileged account password.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -583,7 +583,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "f4f249bc-6e7f-4b85-89c4-10aed522bd7a",
+      "finding_id": "85d31b4e-775a-49b0-bba0-4a2897ca68e0",
       "message": "Unexpected principal can write SPNs on privileged/sensitive account.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -598,7 +598,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "67630dbc-e7bc-4318-8e46-c39e71d9a933",
+      "finding_id": "21c1ec28-5d10-4053-8d5a-2513f7db8690",
       "message": "Broad principal can create/modify users in privileged OU.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -613,7 +613,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "92c8fa7e-05d2-4d99-9658-209d028a890e",
+      "finding_id": "d136121a-c1f4-492b-a158-0fadd1bc8251",
       "message": "Unexpected principal can write delegation attributes on critical computer.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -628,7 +628,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "ec18c324-7164-43d7-89c1-721be8ea9d59",
+      "finding_id": "48b1a71c-6501-4bf6-84c0-ee20ab3ce6a1",
       "message": "Unexpected principal controls Domain Controllers OU.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -643,7 +643,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "84f2e395-d8bf-434d-9891-eb0f570938e5",
+      "finding_id": "eee5c0fe-c9da-4521-8920-09c6f08ff680",
       "message": "Broad principal can create computer objects in critical OU.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -658,7 +658,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "1dbb7db4-686f-4c10-8c70-2cf419d34f5c",
+      "finding_id": "ea037fa5-c055-4f6b-ac2a-39d9f0eec6ed",
       "message": "Unexpected principal controls security-relevant GPO container.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -673,7 +673,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "109df8f6-571c-4486-bc7b-77eb7a15ea98",
+      "finding_id": "2e80f2c9-ba74-4547-8a01-89991c7793da",
       "message": "Critical ACL contains unresolved SID.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -688,7 +688,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "079c4016-1ab1-437d-bbe6-0e892deaad25",
+      "finding_id": "76edd586-9dc8-4730-bc80-2b9ff0a38537",
       "message": "Broad principal has LAPS password-read rights.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -703,7 +703,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "9c0ae988-23b2-43b6-a9dc-68e7fef355dd",
+      "finding_id": "eecb6d80-d36c-492a-8346-ae4b1d3cc538",
       "message": "Broad principal has LAPS reset/write rights.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -718,7 +718,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "1c43bc40-e60c-4204-9bc4-563653f38458",
+      "finding_id": "0baaa2a3-9d79-4d9f-861d-91606b95d085",
       "message": "ACE interpretation ambiguous due to unknown object-specific GUID.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Unavailable",
@@ -733,7 +733,7 @@
     {
       "category": "Critical-object ACLs",
       "evidence": {},
-      "finding_id": "7e0390d1-c573-4191-b105-55f18492f070",
+      "finding_id": "87a17276-a8e2-4031-bd0a-8db2b6f6323f",
       "message": "ACL collection present.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Pass",
@@ -748,7 +748,7 @@
     {
       "category": "Computers and domain controllers",
       "evidence": {},
-      "finding_id": "1d0d5c29-ca17-4f54-a561-c86bccf6949a",
+      "finding_id": "c2c7c4d7-334e-4454-b0fb-02f47bace0a0",
       "message": "Enabled computer account is stale.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -763,7 +763,7 @@
     {
       "category": "Computers and domain controllers",
       "evidence": {},
-      "finding_id": "3070db88-0cfb-4c72-a050-e550a1fe8399",
+      "finding_id": "5dc05054-6697-4ee7-82c5-23b4c26fac9b",
       "message": "Computer OS outside operator-maintained allowlist.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -778,7 +778,7 @@
     {
       "category": "Computers and domain controllers",
       "evidence": {},
-      "finding_id": "0f2e855f-a42d-4db7-b101-0bb2dfc0cbcd",
+      "finding_id": "6e3469e7-125b-461b-a15b-b1e287d79911",
       "message": "Unexpected delegation on non-DC computer.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -793,7 +793,7 @@
     {
       "category": "Computers and domain controllers",
       "evidence": {},
-      "finding_id": "1dd7717d-2b53-4c8d-81a9-efc09d140165",
+      "finding_id": "e04be7ea-8377-44f2-a177-c26a4ed039e8",
       "message": "Unexpected SPN pattern (heuristic).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -808,7 +808,7 @@
     {
       "category": "Computers and domain controllers",
       "evidence": {},
-      "finding_id": "6f71ebdc-85c6-451b-b688-3882e0f2bce4",
+      "finding_id": "0188bc53-49f6-4377-a30e-a1859fab1fb3",
       "message": "Inactive computer retains RBCD metadata.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -823,7 +823,7 @@
     {
       "category": "Computers and domain controllers",
       "evidence": {},
-      "finding_id": "bbb94bd2-5f6f-4e06-ba4d-e55fd2884f74",
+      "finding_id": "47f61a84-4323-4ca6-9ace-25c7de7eb3de",
       "message": "Computer lacks Windows LAPS expiration metadata where policy expects LAPS.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -838,7 +838,7 @@
     {
       "category": "Computers and domain controllers",
       "evidence": {},
-      "finding_id": "334f108e-034f-4700-8500-88ff49f5dfd0",
+      "finding_id": "26218fb3-027d-4cd1-90e4-a8363e1cb676",
       "message": "Computer LAPS expiration appears stale or far in the future.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -853,7 +853,7 @@
     {
       "category": "Computers and domain controllers",
       "evidence": {},
-      "finding_id": "b3f0c130-db00-43fa-8331-dd0a1f5034f8",
+      "finding_id": "14f9fc36-f284-4e19-800d-d517eee97a7a",
       "message": "Computer LAPS expiration appears stale or far in the future.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -868,7 +868,7 @@
     {
       "category": "Computers and domain controllers",
       "evidence": {},
-      "finding_id": "46abf482-9509-4e49-860f-76e359bc4909",
+      "finding_id": "db315d17-9aaa-487c-9c74-a975ba4957fe",
       "message": "Domain controller password age exceeds threshold.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -883,7 +883,7 @@
     {
       "category": "Computers and domain controllers",
       "evidence": {},
-      "finding_id": "2d55f4a5-1605-4d17-972c-f22e6dc7728b",
+      "finding_id": "3b4386ae-d0ce-42d7-bd42-30a3e313efa1",
       "message": "DC object outside expected Domain Controllers OU.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -898,7 +898,7 @@
     {
       "category": "Computers and domain controllers",
       "evidence": {},
-      "finding_id": "18f7b62f-ff72-4185-8d1f-7357249f9bd6",
+      "finding_id": "c67eefcb-57e7-4657-9a9d-25d0c2acada6",
       "message": "DC not protected from accidental deletion.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -913,7 +913,7 @@
     {
       "category": "Computers and domain controllers",
       "evidence": {},
-      "finding_id": "07908f19-9e76-4366-9f35-fdd8078f6486",
+      "finding_id": "4b394c60-20ca-48ac-b9d9-48cf2f9bf7a8",
       "message": "DC inventory present.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Pass",
@@ -928,7 +928,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "9eb866ed-cad0-46eb-a68e-b6826ecec442",
+      "finding_id": "b3d940db-47bc-43f0-b631-7e238a3b70b6",
       "message": "Schema version supported.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Pass",
@@ -943,7 +943,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "d3e44f2a-1f81-410b-a3e3-7c1370db9989",
+      "finding_id": "9a2c327e-57cf-430c-83fb-0ebd989d099e",
       "message": "Domain functional level meets policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Pass",
@@ -958,7 +958,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "308af583-6474-4777-ada4-91d7ec5791b6",
+      "finding_id": "14951cd6-0125-4ebe-b70a-b008d3202847",
       "message": "Forest functional level meets policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Pass",
@@ -973,7 +973,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "80ceefac-6cdd-4e8e-b144-5a2e9bd718b7",
+      "finding_id": "025c2545-ce01-4ec1-a75c-4a42eeaa8b2c",
       "message": "Recycle Bin not enabled.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -988,7 +988,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "10fec376-0900-42a2-9860-a65162c2ab35",
+      "finding_id": "10b7229c-f084-43fe-83a6-287945ee641c",
       "message": "MachineAccountQuota 10 above policy 0.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1003,7 +1003,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "14ea058c-e6ed-423f-a98b-c72fcd959167",
+      "finding_id": "375e6a8d-509b-473a-aa47-5f072ee1cbd3",
       "message": "Min length 8 below 12.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1018,7 +1018,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "3f066435-e476-4d02-87b1-5bd038ea34d8",
+      "finding_id": "623b9e70-bad5-4f76-b176-fc2b8e92e22e",
       "message": "Password history below policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1033,7 +1033,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "caeeb52d-6f7f-49e9-9103-80cbb9a51555",
+      "finding_id": "611f48cc-ef2c-4984-a0e5-6fc3be4f1afa",
       "message": "Complexity not enabled.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1048,7 +1048,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "4e1fd2f9-fd03-461e-898c-493bfd8aeaad",
+      "finding_id": "f2bb0696-4198-4758-befd-2dbe283cf88f",
       "message": "Lockout threshold 0 outside policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1063,7 +1063,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "a29a8b50-b59c-45c8-8476-0e0279e6a3e9",
+      "finding_id": "58f0cd05-5a93-4279-86c1-6afd3936fe6d",
       "message": "Lockout duration below policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1078,7 +1078,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "0cb355a2-6ff5-40a7-8daf-c40fa7deefee",
+      "finding_id": "89f241b1-1b08-4734-b836-d4be7b0c00de",
       "message": "Ticket lifetime 20h outside configured expectation.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1093,7 +1093,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "18a13238-f16d-4bb1-8f68-78d0a6d9363a",
+      "finding_id": "a2157e8f-6b75-4a5e-9581-5c7c6fef99bd",
       "message": "Administrator password age 400d exceeds threshold.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1108,7 +1108,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "8bfb182b-3c65-4ec1-8722-d22fd9c4b6b1",
+      "finding_id": "1fbd6c1c-f62b-4bba-803d-cdfd825f51c2",
       "message": "Built-in Guest account enabled.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1123,7 +1123,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "bb44fa22-2d62-4c73-80cf-0a3bd7000c0b",
+      "finding_id": "3b5a7d8b-b3f6-462f-9f41-3768eb1e0d47",
       "message": "krbtgt password age 500d exceeds threshold. Plan reset carefully with replication validation.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1138,7 +1138,7 @@
     {
       "category": "Domain and forest",
       "evidence": {},
-      "finding_id": "882af540-0545-4e7d-9fe0-2f1d11e2aabe",
+      "finding_id": "55fb1614-2ff2-44d1-933f-ba8f65d1fde9",
       "message": "Collected 2 domain controller object(s). Site coverage still requires operational review.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Pass",
@@ -1153,7 +1153,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "00e6cc6c-6605-405d-b070-a376ef5e1a6f",
+      "finding_id": "b6e6d3ff-7e40-437e-8118-c081c86f0460",
       "message": "DC LDAP signing not set to configured secure value.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1168,7 +1168,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "e79858d0-3668-47d4-b46c-5dc7f5dbefdf",
+      "finding_id": "858f0973-7db4-4edf-a916-57ae7dc4b6ab",
       "message": "LDAP client signing below policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1183,7 +1183,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "83ae7049-a35e-48bb-bf9c-867a6ab81acf",
+      "finding_id": "554cbe3f-26c9-4e4e-8cb5-faed4675eeef",
       "message": "LDAP channel-binding absent or below policy (contextual).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1198,7 +1198,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "9a5b014c-ba31-4997-8c26-a5ef2f8620b4",
+      "finding_id": "dd04ddd7-b7c3-436d-ab93-659808c48f5a",
       "message": "LAN Manager authentication level permits legacy behavior.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1213,7 +1213,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "3581abc3-3849-46c5-8997-55fbe84d3747",
+      "finding_id": "fb9c8394-2808-4441-8dba-f18db5059caf",
       "message": "LM hash storage not disabled where represented.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1228,7 +1228,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "003a2a79-9222-4c34-9186-b931ddcaa29c",
+      "finding_id": "1de8ab78-8f6b-4560-8735-d56fb257eaac",
       "message": "Anonymous SID/name translation enabled.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1243,7 +1243,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "d812a02a-032c-48d6-a4ed-e3c3da9b8915",
+      "finding_id": "ae3c3b29-be7e-4da2-bfbd-68c316f973d8",
       "message": "Secure-channel signing/encryption requirement below policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1258,7 +1258,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "39ed3887-94ed-479c-a782-adc068274516",
+      "finding_id": "45a41263-d47d-427e-838c-6ba4b056dc18",
       "message": "Auditing setting absent or unavailable.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Unavailable",
@@ -1273,7 +1273,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "390e1bee-27b4-4417-9a53-e13b27104496",
+      "finding_id": "65b19825-80e9-4dbd-bd1b-7c431454b535",
       "message": "Auditing setting absent or unavailable.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Unavailable",
@@ -1288,7 +1288,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "3960a764-6f1f-4865-9d60-39236891056d",
+      "finding_id": "4ebad1c5-72b0-4e44-9f18-a35358f91701",
       "message": "Auditing setting absent or unavailable.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Unavailable",
@@ -1303,7 +1303,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "d11bd7c2-1e8e-49c2-a8a4-ea13339b5998",
+      "finding_id": "48900bc6-4a68-4f7e-b961-6fa91e55a984",
       "message": "Auditing setting absent or unavailable.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Unavailable",
@@ -1318,7 +1318,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "fa532b27-ec83-4704-a93d-1420aeb700e4",
+      "finding_id": "c0c8a83f-cccd-4303-8417-625a63053196",
       "message": "Advanced audit-policy subcategory override not configured.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1333,7 +1333,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "e26624a2-3ef7-4f40-b8c0-fcd915abcdc5",
+      "finding_id": "a4cf7c50-c050-42d4-9c84-4e2e84e73c45",
       "message": "Default domain password policy below policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1348,7 +1348,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "03b08338-a88a-408e-be7b-eed50d17ece5",
+      "finding_id": "f0828926-fa52-4b1e-83bc-7952a7c554ae",
       "message": "Default domain lockout policy below policy.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1363,7 +1363,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "04401f4d-acb7-4233-8da5-663dcbcf2480",
+      "finding_id": "8676207b-4cc0-407f-9052-6d5ea985b80f",
       "message": "Kerberos ticket policy outside configured thresholds.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1378,7 +1378,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "bdc1b666-e199-41c4-b2fd-a85ec9bd3a6f",
+      "finding_id": "df7b8abd-a464-49b8-b262-24b4445fff9f",
       "message": "GPO report exists but effective application cannot be determined (precedence/filtering uncertainty).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1393,7 +1393,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "88cb06f3-6c47-4f2c-a9e0-6dbcf6deefb5",
+      "finding_id": "dfac5610-0db7-421b-83a0-bd19102b2dea",
       "message": "GPO grants edit rights to a broad principal.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1408,7 +1408,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "4ac5d649-97bc-4565-bde2-6bde1641d82c",
+      "finding_id": "59f9926b-62e8-4230-8edf-d2c43a09c3be",
       "message": "GPO has unexpected or unresolved owner.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1423,7 +1423,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "ace939f5-1d12-4790-a6ff-b2a9bc12f8b2",
+      "finding_id": "4c033759-c98c-45af-9586-e72798122724",
       "message": "GPO has unexpected or unresolved owner.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1438,7 +1438,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "cd187299-8251-4985-8d49-a9831fbbf9e2",
+      "finding_id": "9e8e2fe4-ce95-4f52-b1e5-b02f23b77e68",
       "message": "Security-relevant GPO is unlinked (informational).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1453,7 +1453,7 @@
     {
       "category": "Group Policy and authentication settings",
       "evidence": {},
-      "finding_id": "91ef00b7-538d-4531-8c55-468459a91b16",
+      "finding_id": "a3f6f72d-5ee4-45fc-ab49-9d1b7d2fb1fc",
       "message": "GPO collectors not marked truncated.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Pass",
@@ -1468,7 +1468,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "1cd766af-b04a-42d7-bb8f-5262dc8efc79",
+      "finding_id": "7f86e036-e46d-48b4-9b09-36ccb6d7fee8",
       "message": "SPN on inactive account.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1483,7 +1483,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "9fa57bb4-0f91-465b-aaf0-5d396c9a7e40",
+      "finding_id": "671fc6c2-f9ea-498b-ac9c-070af67fa7ec",
       "message": "SPN on privileged account.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1498,7 +1498,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "2f6c4ba8-3462-4d3c-92c0-35ffba2d6ad9",
+      "finding_id": "8264dac5-a095-4295-bc18-4be099ba6c13",
       "message": "SPN on privileged account.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1513,7 +1513,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "a7884ddd-3359-4d28-8f3f-0bd21cb16ea8",
+      "finding_id": "84559100-c3f2-4e03-bd44-43d6482887d5",
       "message": "Duplicate SPN.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1528,7 +1528,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "7e878d34-a8c5-40e8-83b7-83cd719964d6",
+      "finding_id": "85be0a09-ca84-472c-98f3-53e6fecf00c5",
       "message": "krbtgt password age exceeds threshold.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1543,7 +1543,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "7fb68222-bb99-47e6-801e-adb0351b893c",
+      "finding_id": "49c1be83-c531-4914-b1fa-04369abba255",
       "message": "Privileged account is delegable.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1558,7 +1558,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "585a8e7e-4eaf-42c2-9b6a-11150b5f21d3",
+      "finding_id": "255f09ed-9d58-4f47-af03-8f953194ed0d",
       "message": "Protected Users member lacks AES-compatible evidence.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1573,7 +1573,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "294ae338-d3be-494a-a3fd-5116569ca935",
+      "finding_id": "10d8bec2-e8f2-493b-8b5d-b90254359bc7",
       "message": "Privileged account is delegable.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1588,7 +1588,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "b20bda6b-ecb7-482c-b085-9d2d2f2c9708",
+      "finding_id": "44e5f322-4685-439c-86d2-605bf29f9159",
       "message": "Privileged account is delegable.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1603,7 +1603,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "298b4089-7c90-4777-8843-940808d3b03d",
+      "finding_id": "dccaa86b-b9e0-4fc8-bf69-5bdca7d3571b",
       "message": "DES-only account.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1618,7 +1618,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "24cb0ea9-a6c7-46c3-bac0-bf5a7054f75c",
+      "finding_id": "9103abec-1aae-445b-bd44-2d8932e01de9",
       "message": "RC4/legacy-only encryption metadata.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1633,7 +1633,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "91a3140b-07f5-4f32-9d5c-f49cb85bd6e5",
+      "finding_id": "474b852c-97fd-43a3-a259-a05c4db20163",
       "message": "Kerberos preauthentication disabled.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1648,7 +1648,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "b3db437f-5ad9-44e2-8210-bb4de59b6f75",
+      "finding_id": "7ec8a88b-c153-4271-9697-07c78a28338b",
       "message": "Privileged account is delegable.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1663,7 +1663,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "cd523219-a83a-4ecb-9fc8-be3559f05c75",
+      "finding_id": "3552f052-28fd-4e59-89bf-917fd079e350",
       "message": "Sensitive service account is delegable.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1678,7 +1678,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "30299994-6ae0-49af-ace6-57929934f0bb",
+      "finding_id": "6123b69f-24dd-4b04-bb92-e57f0e3c4a0f",
       "message": "Protected Users member lacks AES-compatible evidence.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1693,7 +1693,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "d2d19aec-a5f4-4841-a3ae-437a1c9aeef3",
+      "finding_id": "06889de1-b5ed-43fd-95fd-876f1a519684",
       "message": "Sensitive service account is delegable.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1708,7 +1708,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "cef2ef48-ec9c-4cd5-ae1f-c2113320fd4b",
+      "finding_id": "711f5297-9399-4f0b-9f00-0cc0764137dc",
       "message": "Privileged account is delegable.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1723,7 +1723,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "c9c9a141-c557-497f-908b-f3c52b720349",
+      "finding_id": "184a02d1-aefb-411a-9346-af5bcfc3fe24",
       "message": "Unconstrained delegation on non-DC account.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1738,7 +1738,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "61e761ee-40fc-4eee-8362-a4a192178f4e",
+      "finding_id": "2646cf83-563c-445d-b630-fe74aa176465",
       "message": "RBCD grants access to unexpected/broad principal.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1753,7 +1753,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "86ba828c-7515-4d12-bc5a-3ac772723405",
+      "finding_id": "83eb5c77-bebe-4690-8f80-e7d6e570213c",
       "message": "Delegation target references unresolved SPN.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1768,7 +1768,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "89e35d88-bba4-4dba-98ea-089cbfe0ded3",
+      "finding_id": "5ad8c4ea-038e-4928-95e4-b183d6533278",
       "message": "Delegation combines high privilege and broad service scope.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1783,7 +1783,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "89620c04-d3b5-4e8e-bcd4-34176b2535b1",
+      "finding_id": "97440ed3-20ff-45fe-9fa1-e52283b8a9eb",
       "message": "Unconstrained delegation on non-DC account.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1798,7 +1798,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "6cb7318c-64ca-418d-8982-cc4231dff7e3",
+      "finding_id": "b9fbe3e6-0bbb-41df-9eb0-b3316215f38b",
       "message": "Unconstrained delegation on sensitive account.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1813,7 +1813,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "2c88225d-abd5-49f7-bc65-7de663e5a07e",
+      "finding_id": "683eb63e-1a71-4724-af7e-bd530e848769",
       "message": "Constrained delegation targets high-impact service classes.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1828,7 +1828,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "b84c33e0-3ea0-4563-a3c8-2538b6dd4307",
+      "finding_id": "39db458c-a80e-4a9e-ac7b-1b3700f1697f",
       "message": "Protocol transition enabled.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1843,7 +1843,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "7e7e12be-6dea-42f3-b6dd-9c5ebe7827d0",
+      "finding_id": "ca2e602b-fd6b-4409-a76d-1f05ae341f88",
       "message": "Delegation combines high privilege and broad service scope.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1858,7 +1858,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "c9bbac89-031f-4e3b-a7d1-a817d9e80bc4",
+      "finding_id": "87bd1eef-60d4-4435-9455-8a5c033eee23",
       "message": "Authentication policy absent for configured sensitive classes (informational/strict).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1873,7 +1873,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "613ae1c9-22fd-48a1-87ae-94cfed7f9105",
+      "finding_id": "7e51dfb4-38ab-424f-a494-1bcee49bbc2a",
       "message": "Authentication-policy silo membership inconsistent.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1888,7 +1888,7 @@
     {
       "category": "Kerberos and delegation",
       "evidence": {},
-      "finding_id": "33077366-c884-43ce-9e1c-67a1479ba69e",
+      "finding_id": "113bdabb-5bdb-4ca3-ba60-e09d9eee2213",
       "message": "Kerberos metadata present.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Pass",
@@ -1903,7 +1903,7 @@
     {
       "category": "Windows LAPS",
       "evidence": {},
-      "finding_id": "9eb4b37a-8850-41ed-bcc1-8fb725070ea7",
+      "finding_id": "2e6834a0-7de0-434c-8de2-b5321e545886",
       "message": "Windows LAPS schema metadata present.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Pass",
@@ -1918,7 +1918,7 @@
     {
       "category": "Windows LAPS",
       "evidence": {},
-      "finding_id": "afed56b4-6a4a-475b-ab39-2c8866bc5938",
+      "finding_id": "1854f5ed-a500-4653-9b52-b6f021742d83",
       "message": "Legacy and Windows LAPS metadata coexist inconsistently.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1933,7 +1933,7 @@
     {
       "category": "Windows LAPS",
       "evidence": {},
-      "finding_id": "9612c5bb-367f-42dd-af5f-ab73832963d7",
+      "finding_id": "15e1f6d6-133b-4abc-bd3e-e7dc5c4aa403",
       "message": "Eligible computer lacks LAPS expiration metadata.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1948,7 +1948,7 @@
     {
       "category": "Windows LAPS",
       "evidence": {},
-      "finding_id": "3ce2bafa-821d-4ddf-91e2-4f43dc931ef6",
+      "finding_id": "0ee5b7a0-57f8-4c1d-b50c-ef4e5e33b0ca",
       "message": "LAPS password expiration metadata is overdue.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1963,7 +1963,7 @@
     {
       "category": "Windows LAPS",
       "evidence": {},
-      "finding_id": "fe6769cc-d6ab-4d2b-9791-1d6930e6acfb",
+      "finding_id": "4c2c3a8d-8f73-4a5a-a4f4-88cd0f56ba53",
       "message": "LAPS expiration unusually far in the future.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1978,7 +1978,7 @@
     {
       "category": "Windows LAPS",
       "evidence": {},
-      "finding_id": "a65de3df-0e4e-4235-bd50-87fffc090c03",
+      "finding_id": "6af5e9b7-60e8-4f98-a560-479b0c000f72",
       "message": "Broad principal can read LAPS password attributes (ACL metadata only; password not retrieved).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -1993,7 +1993,7 @@
     {
       "category": "Windows LAPS",
       "evidence": {},
-      "finding_id": "9efb1a0d-2fdf-45ea-a0fd-48b10f237a6e",
+      "finding_id": "85899e6b-597d-4622-bdd0-e7ae9de1f9a8",
       "message": "Broad principal can reset/modify LAPS-related attributes.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2008,7 +2008,7 @@
     {
       "category": "Windows LAPS",
       "evidence": {},
-      "finding_id": "0c185b44-e3d3-4d63-8bfc-f3a4d2c4c1cb",
+      "finding_id": "108e50ce-0ff1-40b3-9d78-6466d8dbd057",
       "message": "Broad principal can read LAPS password attributes (ACL metadata only; password not retrieved).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2023,7 +2023,7 @@
     {
       "category": "Windows LAPS",
       "evidence": {},
-      "finding_id": "7b475c9d-5a17-4307-89bb-ba75d43858ff",
+      "finding_id": "39752a45-8de4-45f7-87c6-0ab14bcd0d4d",
       "message": "LAPS reader includes highest-privilege group; narrower delegation may be preferable.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2038,7 +2038,7 @@
     {
       "category": "Windows LAPS",
       "evidence": {},
-      "finding_id": "cfa48b09-0639-4293-b55c-27995a7bff81",
+      "finding_id": "05488cdd-ea17-43b4-8d20-ef448f372064",
       "message": "Windows LAPS encrypted-password policy cannot be verified (GPO metadata absent).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Unavailable",
@@ -2053,7 +2053,7 @@
     {
       "category": "Windows LAPS",
       "evidence": {},
-      "finding_id": "612e9aec-d6cd-4195-a161-cc0bdc48110d",
+      "finding_id": "c9df1f58-0457-41cc-a5de-7eaadc5d1b30",
       "message": "Domain-controller LAPS/DSRM policy cannot be verified.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Unavailable",
@@ -2068,7 +2068,7 @@
     {
       "category": "Windows LAPS",
       "evidence": {},
-      "finding_id": "f732aff6-9a80-47e2-8235-3097902431c6",
+      "finding_id": "8b710ea0-1691-43a4-b99b-1dc15bdef60e",
       "message": "No blocked LAPS password attributes detected in snapshot.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Pass",
@@ -2083,7 +2083,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "a1120d45-99b8-42f4-8880-75f6b9e73135",
+      "finding_id": "aba8f46a-7990-46c4-b2b0-4e223b591733",
       "message": "Direct highest-privilege members 9 exceed expectation.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2098,7 +2098,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "3a631cbc-f0df-427f-a8a9-050ead8759d5",
+      "finding_id": "a9575f8d-1b02-4f36-aa28-3202b6cf7663",
       "message": "Transitive highest-privilege membership within expectation.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Pass",
@@ -2113,7 +2113,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "eb7667ad-72ec-4993-8424-7f26fd1984e8",
+      "finding_id": "0cb7f50a-0f0f-41b0-be75-a9e00eb43ec3",
       "message": "Privileged account password age exceeds threshold.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2128,7 +2128,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "d9c48ecb-c81e-452d-af18-81fd837b682f",
+      "finding_id": "30a1f842-9067-42a1-87e0-a99fd27ed6e3",
       "message": "Privileged account not marked sensitive/cannot be delegated.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2143,7 +2143,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "e63a6d7c-0b6c-4c96-a3a7-0bb9ff94d6f9",
+      "finding_id": "3b104137-cfef-4cc3-8105-15fc3f4b3ef7",
       "message": "Privileged account has SPNs.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2158,7 +2158,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "c3ae410c-939f-440c-953a-f18f748b6163",
+      "finding_id": "30d0fe74-aee1-410b-8708-682ffba5051f",
       "message": "Privileged account is configured for delegation.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2173,7 +2173,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "d82beb01-6ac4-4ade-8007-0fbda5790ffd",
+      "finding_id": "744df10f-c677-4cd7-81c8-42533220ea60",
       "message": "Disabled account retains privileged membership in Domain Admins.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2188,7 +2188,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "33d9f998-1c21-492d-81b3-a94b24d3e996",
+      "finding_id": "0c0f7ff3-1965-40ca-a183-b5912ccdf6b4",
       "message": "Privileged account password age exceeds threshold.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2203,7 +2203,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "2653ba86-f318-4a65-ad76-0072bcd366c8",
+      "finding_id": "7e037265-4c13-47e3-806c-bbf9d420e702",
       "message": "Privileged account not marked sensitive/cannot be delegated.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2218,7 +2218,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "e0cee123-a8ff-4368-b0be-e870f1760509",
+      "finding_id": "97c223c2-a459-4fa4-9766-e2363f29cdca",
       "message": "AdminCount inconsistent with protected membership state.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2233,7 +2233,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "da600d71-4e78-4f8b-8b48-d3e6c1c13eba",
+      "finding_id": "58ca0d05-cbbb-41dd-a780-047fbb46102f",
       "message": "Inactive privileged account (200d).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2248,7 +2248,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "a089a307-c84c-4987-bac2-418e106693c1",
+      "finding_id": "3b81847d-2752-465b-a3ee-e4ffa49d8601",
       "message": "Expired account retains privileged membership.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2263,7 +2263,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "78b8b506-51c6-4843-b5d1-01d1fb19e6e1",
+      "finding_id": "9546cbd5-2871-416e-999d-3245d22ce7b0",
       "message": "Privileged account password age exceeds threshold.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2278,7 +2278,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "0358ff7c-2ce9-426f-a95f-137b7a5195f3",
+      "finding_id": "21c1d5e7-b7b8-405b-8ecd-a83229fc44d9",
       "message": "Privileged account not marked sensitive/cannot be delegated.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2293,7 +2293,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "2d4703fe-3e97-49e9-937d-f3fcf2d3191d",
+      "finding_id": "16edc36a-7089-41d5-a5eb-5581653d2afb",
       "message": "Inactive privileged account (100d).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2308,7 +2308,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "5a88ecaa-ef4a-47c9-9823-a17579f00f90",
+      "finding_id": "bc78c6cf-7f25-4154-a16f-960ae89491a9",
       "message": "Service account is privileged-group member.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2323,7 +2323,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "e72bee73-a404-4baf-b46c-8cab59825437",
+      "finding_id": "6c94bbcc-6fff-4d95-a690-415a3513b287",
       "message": "Privileged account password age exceeds threshold.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2338,7 +2338,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "ac18a834-fa92-4d73-8be9-454dac70e429",
+      "finding_id": "8353085d-a544-41d5-8c13-c57016f8e10c",
       "message": "Privileged account password never expires.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2353,7 +2353,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "8730c301-b0a0-4f5c-9c0a-dd94db24a01b",
+      "finding_id": "ff16beb0-bb47-4ee1-a673-1f98aee87266",
       "message": "Privileged account not marked sensitive/cannot be delegated.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2368,7 +2368,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "ed705141-c6d4-43c7-8965-53dea71d028a",
+      "finding_id": "345600d3-c942-4ef0-8322-0882b8938a11",
       "message": "Protected Users contains likely incompatible service account — requires review.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2383,7 +2383,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "369d69d6-c71f-4a96-93d6-252bf99e86aa",
+      "finding_id": "11edeb55-8339-42d9-9304-9f5313b40ee8",
       "message": "Privileged account has SPNs.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2398,7 +2398,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "c3ec590d-9f63-4e66-81e1-7eb7b20e74b8",
+      "finding_id": "ee6ff51d-c430-45ed-80c5-9fa7cef79b0d",
       "message": "Privileged account is configured for delegation.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2413,7 +2413,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "8d2e528d-21c3-4dfe-88c7-86648361e51f",
+      "finding_id": "66231fd2-101c-42c3-ad8f-50b4399ce3cd",
       "message": "Privileged account not marked sensitive/cannot be delegated.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2428,7 +2428,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "cf30ca88-c1da-4971-a878-0f2ffc843b17",
+      "finding_id": "17baabbb-482f-4664-afb8-78d1980523f4",
       "message": "Privileged account not marked sensitive/cannot be delegated.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2443,7 +2443,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "33911769-7ca4-47c7-a9db-cb16f19db206",
+      "finding_id": "5b9be882-1245-4058-9933-f42c5e266e12",
       "message": "Privileged group-membership cycle detected.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2458,7 +2458,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "562da74b-f0a8-44a8-a8e4-84bd222abd50",
+      "finding_id": "14940ae1-5d07-48b8-ab4f-3d76f83c77a0",
       "message": "Privileged group-membership cycle detected.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2473,7 +2473,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "e0ea4fbb-a54a-4c45-9681-b2f171d7ab32",
+      "finding_id": "52437874-609b-40d7-ad47-a8c086cdb87a",
       "message": "Privileged group-membership cycle detected.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2488,7 +2488,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "cd2c5c4a-0341-4e49-b71c-ddbbf67bef7c",
+      "finding_id": "5a6e8782-d615-42ad-b08d-3378956dd29f",
       "message": "AdminCount inconsistent with protected membership state.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2503,7 +2503,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "cd0efed2-902a-413c-a67f-6cf49ca5b411",
+      "finding_id": "86fc1f79-9e14-4999-9504-527e5d185148",
       "message": "Inactive privileged account (100d).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2518,7 +2518,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "c8ae6b18-204b-4cff-9c1e-e7222b12fccf",
+      "finding_id": "82059d84-df13-4425-92c1-f27261ae218b",
       "message": "Service account is privileged-group member.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2533,7 +2533,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "c091b248-49ca-48e4-a3f0-276de2bbcf04",
+      "finding_id": "fa67dacb-9b34-4568-b1b3-1690eb2171ea",
       "message": "Protected Users contains likely incompatible service account — requires review.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2548,7 +2548,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "10ad4de9-e8d5-46c9-a7eb-47627fe75197",
+      "finding_id": "6880751a-23a6-45f9-bbb3-51e40dba3e7b",
       "message": "Foreign security principal has privileged membership.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2563,7 +2563,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "ff970a9a-dfda-44f9-ba77-c59283eaea14",
+      "finding_id": "f81c6621-2f7d-48a6-b3e5-4197cbfe2851",
       "message": "Unresolved SID in privileged membership.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2578,7 +2578,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "3006d3a2-87a2-4599-9744-7c1f783b1699",
+      "finding_id": "9f73d453-a984-467d-8083-d86b36bc5c73",
       "message": "Computer account in unexpected privileged group.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2593,7 +2593,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "caa7fcda-80c5-4f1a-9094-dff39acc3ca1",
+      "finding_id": "4c4f6e8d-cda9-4830-98d5-d3bf7e3d10ec",
       "message": "Built-in operator group contains non-default-looking members (advisory).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2608,7 +2608,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "757c18b3-7e86-4f52-af74-7a400d5ed078",
+      "finding_id": "52dd8724-ba41-4d2a-a788-149017835325",
       "message": "Group Policy Creator Owners contains unexpected members.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2623,7 +2623,7 @@
     {
       "category": "Privileged access",
       "evidence": {},
-      "finding_id": "49a6bf2f-32a0-4aeb-a124-79e428a5468f",
+      "finding_id": "4994eba2-a303-4458-a617-3eb80ee90eba",
       "message": "No broad Pre-Windows 2000 membership observed.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Pass",
@@ -2638,7 +2638,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "0b41e8d4-6d74-4078-871c-20b801e5a849",
+      "finding_id": "9054a5fe-53ef-49ea-932a-fbfd58330726",
       "message": "Duplicate SPN exists.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2653,7 +2653,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "f69ef118-5ae3-4502-a7f5-f4b273d49c84",
+      "finding_id": "422407c1-4a82-4d88-85fe-81501d0f9265",
       "message": "SPN exists on more than one enabled principal.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2668,7 +2668,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "12172014-ff40-4516-8ae2-a1ed4ee98f85",
+      "finding_id": "6623db6d-22ee-40ce-b95e-ea6f5d6a8bfa",
       "message": "User-based service account has SPN and old password.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2683,7 +2683,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "f1cede6c-1d4f-4737-a798-0749d76a9f42",
+      "finding_id": "63f308ea-ff80-4682-9e25-f1179e50fa30",
       "message": "Service account password never expires.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2698,7 +2698,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "1d4b81e3-5e1e-4d9e-8912-da881f7c1f71",
+      "finding_id": "ef232c2c-2fff-4321-998c-3031b3b11457",
       "message": "Service account is privileged.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2713,7 +2713,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "80775b4c-9bb6-40c2-9921-686765f0300c",
+      "finding_id": "67e2fa4b-2685-411f-976e-526752a80389",
       "message": "Service account inactive but enabled.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2728,7 +2728,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "5fb61239-8899-4bd3-9140-475163348695",
+      "finding_id": "736dae7d-3643-4e59-92e2-a7b3c60920ce",
       "message": "Service account configured for unconstrained delegation.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2743,7 +2743,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "8deb605d-f70b-45d9-b4e5-e0e8c02752d7",
+      "finding_id": "dee0cb83-2b51-4eaa-9f37-11709f26eb2e",
       "message": "Service account configured for protocol transition.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2758,7 +2758,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "0a0a116f-017d-47ec-8a06-bf957e10a27d",
+      "finding_id": "c01b7b34-b64d-458d-9aef-6f89799f8c76",
       "message": "Service account lacks AES support per collected metadata.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2773,7 +2773,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "5468a8c1-818f-4c5a-9436-ca36a621d383",
+      "finding_id": "ab6ae4ff-1fee-4a83-95d0-3005df8a4dfa",
       "message": "Credential clue in descriptive attribute (redacted).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2788,7 +2788,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "6b52db72-0d6a-41bd-8800-a124fb10d194",
+      "finding_id": "8b97e216-f650-461b-ad5e-32ac4099c076",
       "message": "Service account lacks accountable owner label.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2803,7 +2803,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "31f7fc73-ae46-417e-bf7c-ffe622f9d3f4",
+      "finding_id": "edbd6f28-0ef3-4b05-b322-a73718cce0c0",
       "message": "User service account may be a gMSA migration candidate (advisory).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2818,7 +2818,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "4f9dc8a1-caf8-42d2-ae66-b8c01ac91717",
+      "finding_id": "f972ea17-12ab-4411-9167-cf768158f371",
       "message": "User-based service account has SPN and old password.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2833,7 +2833,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "02f5e75b-c4a4-4c42-97ff-6038cde44ce6",
+      "finding_id": "a9b4ff32-8014-443d-bc72-ba2803874560",
       "message": "Service account password never expires.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2848,7 +2848,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "3845daf9-270f-4f7e-8053-c850273a82e1",
+      "finding_id": "51a4ca31-42bd-4c5f-a250-2f5fdb2dfbaf",
       "message": "User service account may be a gMSA migration candidate (advisory).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2863,7 +2863,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "0cd30a91-187f-42c4-8bd1-f07c63eb37de",
+      "finding_id": "a7085856-85cc-4528-8f9c-f1e982cdf581",
       "message": "gMSA retrieval principals include broad privileged/general-purpose group.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2878,7 +2878,7 @@
     {
       "category": "Service accounts and gMSA",
       "evidence": {},
-      "finding_id": "b4085a0c-2aa5-4901-89b7-88d112dab16d",
+      "finding_id": "31a7c097-811d-4bce-98f5-415bdd5065bd",
       "message": "gMSA is privileged.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2893,7 +2893,7 @@
     {
       "category": "Trusts",
       "evidence": {},
-      "finding_id": "3619dbca-3371-4ec3-be93-c01e3ff5e187",
+      "finding_id": "4d28db62-8f93-45c7-bd28-a89ecb61a8cc",
       "message": "Bidirectional trust requires review.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2908,7 +2908,7 @@
     {
       "category": "Trusts",
       "evidence": {},
-      "finding_id": "da5faae6-5f4f-462a-9535-9b1030e05858",
+      "finding_id": "c4c0bb4b-9ba5-4079-99e1-f26701e718c7",
       "message": "External trust lacks expected SID-filtering/quarantine metadata.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2923,7 +2923,7 @@
     {
       "category": "Trusts",
       "evidence": {},
-      "finding_id": "48df1724-5048-4a61-a184-77394cff8f34",
+      "finding_id": "951e8a75-e4da-49df-9a61-03b1a24846fc",
       "message": "TGT delegation enabled across trust.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2938,7 +2938,7 @@
     {
       "category": "Trusts",
       "evidence": {},
-      "finding_id": "0e181b51-825a-471b-9c7a-039909b0d5e6",
+      "finding_id": "7eac0de0-9ac2-4649-a780-d69ec3e140e0",
       "message": "Trust target unresolved or metadata incomplete.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2953,7 +2953,7 @@
     {
       "category": "Trusts",
       "evidence": {},
-      "finding_id": "30419e0b-75e7-4716-ae54-e69249b49d69",
+      "finding_id": "2ad8c70e-5294-4f4e-9706-c0d214cb655f",
       "message": "Trust appears stale per operator-defined evidence.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2968,7 +2968,7 @@
     {
       "category": "Trusts",
       "evidence": {},
-      "finding_id": "323ba50f-5f8b-4dc6-aa0a-739d286c4c18",
+      "finding_id": "4fd092ab-4f05-4c19-a55a-35c220e7d6e2",
       "message": "Transitive trust expands exposure beyond configured expectation.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2983,7 +2983,7 @@
     {
       "category": "Trusts",
       "evidence": {},
-      "finding_id": "aed3c23a-3a41-4945-bb6a-cd2da62bf913",
+      "finding_id": "4088f5bf-a332-492a-affe-832433b68ab6",
       "message": "Trust contains SID-history-related migration risk indicators.",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -2998,7 +2998,7 @@
     {
       "category": "Trusts",
       "evidence": {},
-      "finding_id": "a035e9a1-e78d-4be8-84fc-3d0f2579966b",
+      "finding_id": "1d53eeb9-f25f-4035-8526-a5637186b662",
       "message": "Trusted-domain information included without querying the remote forest (informational limitation).",
       "remediation": "Review the configuration against organizational privileged-access and identity-security standards. Validate before changing production.",
       "result": "Fail",
@@ -3012,7 +3012,7 @@
     }
   ],
   "forest_summary": "corp.example.invalid",
-  "generated_at_utc": "2026-08-06T13:52:47.4468814Z",
+  "generated_at_utc": "2026-08-06T20:23:34.5313052Z",
   "gpo_summary": {
     "count": 3
   },
