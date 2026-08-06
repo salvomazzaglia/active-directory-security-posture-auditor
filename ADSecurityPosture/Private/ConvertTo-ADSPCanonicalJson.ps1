@@ -46,10 +46,20 @@ function ConvertTo-ADSPCanonicalJson {
             return
         }
         if ($Obj -is [datetime]) {
-            Append-EscapedString -Builder $Builder -Value ($Obj.ToUniversalTime().ToString('o'))
+            Append-EscapedString -Builder $Builder -Value ($Obj.ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ss.fffffffZ', [System.Globalization.CultureInfo]::InvariantCulture))
             return
         }
-        if ($Obj -is [string] -or $Obj -is [char] -or $Obj -is [guid] -or $Obj -is [enum]) {
+        if ($Obj -is [string]) {
+            # Normalize ISO-8601 timestamps so in-memory strings and ConvertFrom-Json DateTime values hash identically.
+            if ($Obj -match '^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}') {
+                $parsed = [datetime]::Parse($Obj, [System.Globalization.CultureInfo]::InvariantCulture, [System.Globalization.DateTimeStyles]::RoundtripKind)
+                Append-EscapedString -Builder $Builder -Value ($parsed.ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ss.fffffffZ', [System.Globalization.CultureInfo]::InvariantCulture))
+                return
+            }
+            Append-EscapedString -Builder $Builder -Value $Obj
+            return
+        }
+        if ($Obj -is [char] -or $Obj -is [guid] -or $Obj -is [enum]) {
             Append-EscapedString -Builder $Builder -Value ([string]$Obj)
             return
         }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "snapshot_file": "snapshot.json",
-  "snapshot_hash": "1a4db2788ae17e710aa125f7aab1685b2ce99e1592e98dd88755412699260bc9",
+  "snapshot_hash": "d093335391d2513ca6c8b8ba791e870e2c094af885a47520ef7d11e99ee5c3c0",
   "synthetic": true,
   "marker": "SYNTHETIC DEMONSTRATION DATA",
   "generated_at_utc": "2026-01-15T12:00:00.0000000Z"
