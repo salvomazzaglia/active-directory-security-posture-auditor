@@ -18,10 +18,9 @@ Describe 'Snapshot validation' {
         $s.synthetic | Should -BeTrue
     }
     It 'detects hash mismatch when mutated' {
-        $mod = Get-Module ADSecurityPosture
         $tmp = Join-Path $RepoRoot ("temp/mismatch-test-" + [guid]::NewGuid().ToString('N').Substring(0,8))
         New-Item -ItemType Directory -Force -Path $tmp | Out-Null
-        $s = New-ADSPSyntheticSnapshot -OutputDirectory $tmp
+        $null = New-ADSPSyntheticSnapshot -OutputDirectory $tmp
         $obj = Get-Content (Join-Path $tmp 'snapshot.json') -Raw | ConvertFrom-Json
         $obj.operator_label = 'tampered'
         ($obj | ConvertTo-Json -Depth 100) | Set-Content (Join-Path $tmp 'snapshot.json') -Encoding UTF8

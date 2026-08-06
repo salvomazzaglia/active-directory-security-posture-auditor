@@ -33,29 +33,24 @@ function Invoke-ADSPCollector_password_policies {
     $status = 'Collected'
     $warnings = @()
     $data = $null
+    $examined = 0
+    $emitted = 0
+    $truncated = $false
     try {
-        switch ('password-policies') {
-            'forest-domain' {
-                $forest = Get-ADForest -ErrorAction Stop
-                $domain = Get-ADDomain -Identity $Context.Domain -ErrorAction Stop
-                $data = @{
-                    forest = [pscustomobject]@{ name = $forest.Name; functional_level = [string]$forest.ForestMode; recycle_bin_enabled = [bool]$forest.RecycleBinEnabled; schema_version = $null }
-                    domains = @([pscustomobject]@{ dns_name = $domain.DNSRoot; netbios_name = $domain.NetBIOSName; functional_level = [string]$domain.DomainMode; machine_account_quota = $null; sid = [string]$domain.DomainSID })
-                }
-            }
-            'password-policies' {
-                $pp = Get-ADDefaultDomainPasswordPolicy -ErrorAction Stop
-                $data = @{ password_policies = @([pscustomobject]@{ name = 'Default Domain Policy'; min_password_length = [int]$pp.MinPasswordLength; password_history_count = [int]$pp.PasswordHistoryCount; complexity_enabled = [bool]$pp.ComplexityEnabled; lockout_threshold = [int]$pp.LockoutThreshold; lockout_duration_minutes = [int]$pp.LockoutDuration.TotalMinutes }) }
-            }
-            'trusts' {
-                $trusts = @(Get-ADTrust -Filter * -ErrorAction Stop | Select-Object -First $Context.MaxObjects)
-                $data = @{ trusts = @($trusts | ForEach-Object { [pscustomobject]@{ target = [string]$_.Target; direction = [string]$_.Direction; trust_type = [string]$_.TrustType; sid_filtering = $null; selective_authentication = $null; tgt_delegation_enabled = $null; metadata_incomplete = $true; unresolved = $false; stale = $false; direction_unexpected = $false; transitive = $null; expands_exposure = $false; sid_history_risk = $false } }) }
-            }
-            default {
-                $status = 'Partial'
-                $warnings += 'Collector framework ready; object hydration depends on directory connectivity and profile.'
-            }
+        $pp = Get-ADDefaultDomainPasswordPolicy -ErrorAction Stop
+        $examined = 1
+        $emitted = 1
+        $data = @{ password_policies = @([pscustomobject]@{ name = 'Default Domain Policy'; min_password_length = [int]$pp.MinPasswordLength; password_history_count = [int]$pp.PasswordHistoryCount; complexity_enabled = [bool]$pp.ComplexityEnabled; lockout_threshold = [int]$pp.LockoutThreshold; lockout_duration_minutes = [int]$pp.LockoutDuration.TotalMinutes }) }
+        try {
+            $fgpp = @(Get-ADFineGrainedPasswordPolicy -Filter * -ErrorAction Stop | Select-Object -First $Context.MaxObjects)
+            $examined += $fgpp.Count
+            $emitted += $fgpp.Count
+            $data['fine_grained_password_policies'] = @($fgpp | ForEach-Object { [pscustomobject]@{ name = [string]$_.Name; min_password_length = [int]$_.MinPasswordLength } })
+            if ($fgpp.Count -ge $Context.MaxObjects) { $truncated = $true; $warnings += 'Fine-grained password policy enumeration truncated.' }
+        } catch {
+            $warnings += 'Fine-grained password policies unavailable or not readable.'
         }
+
     } catch {
         $status = 'Error'
         $warnings += 'Collector error (details redacted).'
@@ -70,9 +65,9 @@ function Invoke-ADSPCollector_password_policies {
         source_mode = 'Live'
         module_required = $moduleRequired
         module_available = $true
-        objects_examined = 0
-        records_emitted = 0
-        truncated = $false
+        objects_examined = $examined
+        records_emitted = $emitted
+        truncated = $truncated
         warnings = $warnings
         errors_redacted = @()
         properties_requested = $props

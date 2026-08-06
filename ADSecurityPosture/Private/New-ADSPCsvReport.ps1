@@ -8,6 +8,9 @@ function ConvertTo-ADSPCsvSafe {
 
 function New-ADSPCsvReport {
     param([Parameter(Mandatory)]$Report, [Parameter(Mandatory)][string]$OutputDirectory, [string]$PrivacyMode = 'Masked')
+    if ($PrivacyMode -notin @('Masked', 'Hashed', 'Full')) {
+        throw "Unsupported privacy mode: $PrivacyMode"
+    }
     $alias = @{}
     function Mask($v, $k) { ConvertTo-ADSPPrivacyValue -Value $v -PrivacyMode $PrivacyMode -Kind $k -AliasMap $alias }
 

@@ -11,7 +11,6 @@ function Assert-ADSPSafePath {
     if ([string]::IsNullOrWhiteSpace($Path)) { throw 'Path is empty.' }
     if ($Path.Contains([char]0)) { throw 'Path contains NUL.' }
     if ($Path -match '(^|\\|/)\.\.(\\|_|/|$)') { throw "Path traversal rejected: $Path" }
-    $invalid = [IO.Path]::GetInvalidFileNameChars() + [IO.Path]::GetInvalidPathChars() | Select-Object -Unique
     $leaf = Split-Path -Leaf $Path
     $reserved = @('CON','PRN','AUX','NUL','COM1','COM2','COM3','COM4','LPT1','LPT2','LPT3')
     if ($reserved -contains ($leaf.Split('.')[0].ToUpperInvariant())) { throw "Reserved filename rejected: $leaf" }
@@ -24,7 +23,6 @@ function Assert-ADSPSafePath {
         [IO.Path]::GetFullPath((Join-Path $RepoRoot $Path))
     }
 
-    $repoFull = [IO.Path]::GetFullPath($RepoRoot)
     $sensitive = @('C:\Windows', 'C:\Windows\System32', '/etc', '/usr', '/bin', '/sbin')
     foreach ($s in $sensitive) {
         if ($full.StartsWith($s, [StringComparison]::OrdinalIgnoreCase)) {

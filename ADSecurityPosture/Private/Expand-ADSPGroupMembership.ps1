@@ -8,7 +8,6 @@ function Expand-ADSPGroupMembership {
         [int]$MaxObjects = 5000
     )
     $results = New-Object System.Collections.Generic.List[object]
-    $visitedGlobal = @{}
     $stack = New-Object System.Collections.Generic.Stack[object]
     $stack.Push(@{ Key = $GroupKey; Path = @($GroupKey); Depth = 0; Visited = @{} })
 

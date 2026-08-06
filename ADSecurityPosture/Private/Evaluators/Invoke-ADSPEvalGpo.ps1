@@ -1,5 +1,6 @@
 function Invoke-ADSPEvalGpo {
     param($Snapshot, $Policy, $Rules)
+    if ($null -eq $Policy) { throw 'Policy is required.' }
     $out = New-Object System.Collections.Generic.List[object]
     $ruleMap = @{}; foreach ($r in $Rules) { $ruleMap[$r.rule_id] = $r }
     function AddF($id, $result, $target, $msg) {
@@ -42,8 +43,8 @@ function Invoke-ADSPEvalGpo {
         }
         $adv = GetSetting 'AuditSubcategoryOverride'
         if (-not $adv -or [string]$adv.value -ne 'Enabled') { AddF 'ADSP-GPO-012' 'Fail' 'audit-override' 'Advanced audit-policy subcategory override not configured.' }
-        $pwd = GetSetting 'MinimumPasswordLength'
-        if ($pwd -and [int]$pwd.value -lt [int]$Policy.thresholds.min_password_length) { AddF 'ADSP-GPO-013' 'Fail' $pwd.gpo_name 'Default domain password policy below policy.' }
+        $minPwdLenSetting = GetSetting 'MinimumPasswordLength'
+        if ($minPwdLenSetting -and [int]$minPwdLenSetting.value -lt [int]$Policy.thresholds.min_password_length) { AddF 'ADSP-GPO-013' 'Fail' $minPwdLenSetting.gpo_name 'Default domain password policy below policy.' }
         $lock = GetSetting 'LockoutThreshold'
         if ($lock -and ([int]$lock.value -le 0)) { AddF 'ADSP-GPO-014' 'Fail' $lock.gpo_name 'Default domain lockout policy below policy.' }
         $tgt = GetSetting 'MaxTicketAge'

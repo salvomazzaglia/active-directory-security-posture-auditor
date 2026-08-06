@@ -1,5 +1,6 @@
 function Invoke-ADSPEvalDomainForest {
     param($Snapshot, $Policy, $Rules)
+    if ($null -eq $Policy) { throw 'Policy is required.' }
     $out = New-Object System.Collections.Generic.List[object]
     $th = $Policy.thresholds
     $ruleMap = @{}

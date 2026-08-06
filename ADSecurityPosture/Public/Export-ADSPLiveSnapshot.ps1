@@ -90,7 +90,9 @@ function Export-ADSPLiveSnapshot {
         if ($IsWindows -or $env:OS -match 'Windows') {
             icacls $out /inheritance:r | Out-Null
         }
-    } catch {}
+    } catch {
+        Write-ADSPConsole -Level Warn -Message 'Could not tighten output ACL permissions; protect the snapshot directory manually.'
+    }
     Write-ADSPConsole -Level Warn -Message 'Sensitivity warning: protect this snapshot. It is not anonymized.'
     return $obj
 }

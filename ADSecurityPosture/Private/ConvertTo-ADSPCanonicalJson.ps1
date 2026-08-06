@@ -2,33 +2,33 @@ function ConvertTo-ADSPCanonicalJson {
     [CmdletBinding()]
     param([Parameter(Mandatory)]$InputObject)
 
-    function Sort-ADSPObject($obj) {
-        if ($null -eq $obj) { return $null }
-        if ($obj -is [string] -or $obj -is [bool] -or $obj -is [int] -or $obj -is [long] -or $obj -is [double] -or $obj -is [decimal]) {
-            return $obj
+    function ConvertTo-ADSPSortedObject {
+        param($Obj)
+        if ($null -eq $Obj) { return $null }
+        if ($Obj -is [string] -or $Obj -is [bool] -or $Obj -is [int] -or $Obj -is [long] -or $Obj -is [double] -or $Obj -is [decimal]) {
+            return $Obj
         }
-        if ($obj -is [datetime]) { return $obj.ToUniversalTime().ToString('o') }
-        if ($obj -is [System.Collections.IDictionary]) {
+        if ($Obj -is [datetime]) { return $Obj.ToUniversalTime().ToString('o') }
+        if ($Obj -is [System.Collections.IDictionary]) {
             $ordered = [ordered]@{}
-            foreach ($k in ($obj.Keys | Sort-Object { $_.ToString() })) {
-                $ordered[$k.ToString()] = Sort-ADSPObject $obj[$k]
+            foreach ($k in ($Obj.Keys | Sort-Object { $_.ToString() })) {
+                $ordered[$k.ToString()] = ConvertTo-ADSPSortedObject -Obj $Obj[$k]
             }
             return $ordered
         }
-        if ($obj -is [System.Collections.IEnumerable] -and -not ($obj -is [string])) {
+        if ($Obj -is [System.Collections.IEnumerable] -and -not ($Obj -is [string])) {
             $list = @()
-            foreach ($item in $obj) { $list += ,(Sort-ADSPObject $item) }
+            foreach ($item in $Obj) { $list += ,(ConvertTo-ADSPSortedObject -Obj $item) }
             return $list
         }
-        # PSCustomObject
-        $props = $obj.PSObject.Properties | Where-Object { $_.MemberType -match 'NoteProperty|Property' } | Sort-Object Name
+        $props = $Obj.PSObject.Properties | Where-Object { $_.MemberType -match 'NoteProperty|Property' } | Sort-Object Name
         $ordered = [ordered]@{}
         foreach ($p in $props) {
-            $ordered[$p.Name] = Sort-ADSPObject $p.Value
+            $ordered[$p.Name] = ConvertTo-ADSPSortedObject -Obj $p.Value
         }
         return $ordered
     }
 
-    $sorted = Sort-ADSPObject $InputObject
+    $sorted = ConvertTo-ADSPSortedObject -Obj $InputObject
     return ($sorted | ConvertTo-Json -Depth 100)
 }

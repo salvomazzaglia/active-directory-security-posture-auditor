@@ -4,6 +4,7 @@ function Get-ADSPFileHash {
         [Parameter(Mandatory)][string]$Path,
         [ValidateSet('SHA256')]$Algorithm = 'SHA256'
     )
+    if ($Algorithm -ne 'SHA256') { throw "Unsupported hash algorithm: $Algorithm" }
     $bytes = [IO.File]::ReadAllBytes($Path)
     $sha = [System.Security.Cryptography.SHA256]::Create()
     try {

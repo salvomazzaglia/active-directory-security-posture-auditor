@@ -59,7 +59,11 @@ Compare-ADSPSnapshot -Before (Join-Path $RepoRoot 'examples/comparison/before.js
 $html = Get-Content (Join-Path $RepoRoot 'temp/ci-baseline/report.html') -Raw
 if ($html -match 'https?://cdn\.|googleapis|jsdelivr|unpkg') { Write-Host 'HTML external resource detected' -ForegroundColor Red; $failed = $true }
 $csv = Get-Content (Join-Path $RepoRoot 'temp/ci-baseline/findings.csv') -Raw
-# formula injection guard: values should be quoted/prefixed if dangerous
+if ($csv -match '(?m)^(=|\+|@)[^,]*,') {
+    Write-Host 'CSV formula-injection risk detected' -ForegroundColor Red
+    $failed = $true
+}
+Write-Host ("Strict score={0}" -f $strict.score)
 $ruleCount = @(Get-ADSPRule).Count
 $synthFindings = @($baseline.findings).Count
 

@@ -1,6 +1,4 @@
-BeforeAll {
-    $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
-}
+$RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
 Describe 'No modification cmdlets' {
     It 'does not contain Set-AD* / New-AD* / Remove-AD* directory modification calls outside denylist docs/tests' {
         $files = Get-ChildItem $RepoRoot -Recurse -Include *.ps1,*.psm1 -File | Where-Object { $_.FullName -notmatch '\\\.git\\|\\tests\\|\\temp\\|\\scripts\\_bootstrap|validate-repository\.ps1|run-ci\.ps1' }

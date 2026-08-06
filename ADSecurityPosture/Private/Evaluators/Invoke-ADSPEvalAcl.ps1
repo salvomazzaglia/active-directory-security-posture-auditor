@@ -1,5 +1,6 @@
 function Invoke-ADSPEvalAcl {
     param($Snapshot, $Policy, $Rules)
+    if ($null -eq $Policy) { throw 'Policy is required.' }
     $out = New-Object System.Collections.Generic.List[object]
     $ruleMap = @{}; foreach ($r in $Rules) { $ruleMap[$r.rule_id] = $r }
     function AddF($id, $result, $target, $msg) {
