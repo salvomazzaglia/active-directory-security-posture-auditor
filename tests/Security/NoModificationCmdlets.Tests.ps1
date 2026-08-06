@@ -3,7 +3,9 @@ BeforeAll {
 }
 Describe 'No modification cmdlets' {
     It 'does not contain Set-AD* / New-AD* / Remove-AD* directory modification calls outside denylist docs/tests' {
-        $files = Get-ChildItem $RepoRoot -Recurse -Include *.ps1,*.psm1 -File | Where-Object { $_.FullName -notmatch '\\\.git\\|\\tests\\|\\temp\\|\\scripts\\_bootstrap|validate-repository\.ps1|run-ci\.ps1' }
+        $files = Get-ChildItem $RepoRoot -Recurse -Include *.ps1,*.psm1 -File | Where-Object {
+            $_.FullName -notmatch '[\\/]\.git[\\/]|[\\/]tests[\\/]|[\\/]temp[\\/]|[\\/]scripts[\\/]_bootstrap|validate-repository\.ps1|run-ci\.ps1'
+        }
         $hits = @()
         foreach ($f in $files) {
             $t = Get-Content $f.FullName -Raw
