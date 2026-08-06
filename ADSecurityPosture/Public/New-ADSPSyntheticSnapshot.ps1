@@ -164,7 +164,7 @@ function New-ADSPSyntheticSnapshot {
     $obj = [pscustomobject]$snapshot
 
     if ($OutputDirectory) {
-        $out = Assert-ADSPSafePath -Path $OutputDirectory -IsOutput -AllowAbsolute
+        $out = Assert-ADSPSafePath -Path $OutputDirectory -IsOutput -AllowAbsolute -AllowOverwrite
         if (-not (Test-Path -LiteralPath $out)) { New-Item -ItemType Directory -Path $out -Force | Out-Null }
         $snapPath = Join-Path $out 'snapshot.json'
         $json = ConvertTo-ADSPCanonicalJson -InputObject $obj

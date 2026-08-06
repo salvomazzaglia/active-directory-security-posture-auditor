@@ -6,7 +6,7 @@ function Export-ADSPReport {
         [ValidateSet('Json','Csv','Html','All')]$Format = 'All',
         [ValidateSet('Masked','Hashed','Full')]$PrivacyMode = 'Masked'
     )
-    $out = Assert-ADSPSafePath -Path $OutputDirectory -IsOutput -AllowAbsolute
+    $out = Assert-ADSPSafePath -Path $OutputDirectory -IsOutput -AllowAbsolute -AllowOverwrite
     if (-not (Test-Path -LiteralPath $out)) { New-Item -ItemType Directory -Path $out -Force | Out-Null }
     Assert-ADSPNoBlockedAttributes -Object $AuditResult -PathHint 'audit-result'
     if ($Format -in @('Json','All')) { New-ADSPJsonReport -Report $AuditResult -Path (Join-Path $out 'report.json') }

@@ -1,4 +1,6 @@
-$RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
+BeforeAll {
+    $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
+}
 Describe 'No live queries in CI' {
     It 'workflow does not run collect' {
         $wf = Get-Content (Join-Path $RepoRoot '.github/workflows/ci.yml') -Raw

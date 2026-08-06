@@ -1,4 +1,6 @@
-$RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
+BeforeAll {
+    $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
+}
 Describe 'PowerShell 5.1 syntax compatibility' {
     It 'public scripts parse without errors' {
         $files = Get-ChildItem (Join-Path $RepoRoot 'ADSecurityPosture') -Recurse -Include *.ps1,*.psm1

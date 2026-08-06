@@ -31,21 +31,52 @@ if (Get-Module -ListAvailable PSScriptAnalyzer) {
 }
 
 $pesterTotal=0; $pesterPassed=0; $pesterFailed=0; $pesterSkipped=0; $pesterNotRun=0
-if (Get-Module -ListAvailable Pester) {
-  Import-Module Pester -MinimumVersion 5.0.0 -MaximumVersion 5.99.99 -ErrorAction Stop
-  $cfg = New-PesterConfiguration
-  $cfg.Run.Path = Join-Path $RepoRoot 'tests'
-  $cfg.Run.PassThru = $true
-  $cfg.Output.Verbosity = 'Normal'
-  $p = Invoke-Pester -Configuration $cfg
-  $pesterTotal = $p.TotalCount
-  $pesterPassed = $p.PassedCount
-  $pesterFailed = $p.FailedCount
-  $pesterSkipped = $p.SkippedCount
-  $pesterNotRun = $p.NotRunCount
-  if ($pesterFailed -gt 0) { $failed = $true }
+$pesterAvailable = @(Get-Module -ListAvailable -Name Pester | Where-Object {
+  $_.Version -ge [version]'5.0.0' -and $_.Version -lt [version]'6.0.0'
+} | Sort-Object Version -Descending)
+if ($pesterAvailable.Count -gt 0) {
+  $pesterModulePath = $pesterAvailable[0].Path
+  $testsPath = Join-Path $RepoRoot 'tests'
+  $pesterResultPath = Join-Path $RepoRoot 'temp/pester-ci-result.json'
+  $pesterDir = Split-Path -Parent $pesterResultPath
+  if (-not (Test-Path -LiteralPath $pesterDir)) { New-Item -ItemType Directory -Path $pesterDir -Force | Out-Null }
+  # Isolate Pester in a child process so a host-installed Pester 6 assembly cannot conflict.
+  $child = @"
+`$ErrorActionPreference = 'Stop'
+Import-Module -Name '$pesterModulePath' -Force
+`$cfg = New-PesterConfiguration
+`$cfg.Run.Path = '$testsPath'
+`$cfg.Run.PassThru = `$true
+`$cfg.Output.Verbosity = 'Normal'
+`$p = Invoke-Pester -Configuration `$cfg
+[pscustomobject]@{
+  TotalCount = `$p.TotalCount
+  PassedCount = `$p.PassedCount
+  FailedCount = `$p.FailedCount
+  SkippedCount = `$p.SkippedCount
+  NotRunCount = `$p.NotRunCount
+  Version = (Get-Module Pester).Version.ToString()
+} | ConvertTo-Json | Set-Content -LiteralPath '$pesterResultPath' -Encoding UTF8
+if (`$p.FailedCount -gt 0) { exit 1 } else { exit 0 }
+"@
+  $childFile = Join-Path $RepoRoot 'temp/pester-ci-child.ps1'
+  Set-Content -LiteralPath $childFile -Value $child -Encoding UTF8
+  $pwshCmd = Get-Command pwsh -ErrorAction SilentlyContinue
+  if ($pwshCmd) { $pwshExe = $pwshCmd.Source } else { $pwshExe = (Get-Command powershell).Source }
+  & $pwshExe -NoProfile -File $childFile
+  $pesterChildExit = $LASTEXITCODE
+  if (Test-Path -LiteralPath $pesterResultPath) {
+    $pr = Get-Content -LiteralPath $pesterResultPath -Raw | ConvertFrom-Json
+    $pesterTotal = [int]$pr.TotalCount
+    $pesterPassed = [int]$pr.PassedCount
+    $pesterFailed = [int]$pr.FailedCount
+    $pesterSkipped = [int]$pr.SkippedCount
+    $pesterNotRun = [int]$pr.NotRunCount
+    Write-Host ("Pester={0}" -f $pr.Version)
+  }
+  if ($pesterChildExit -ne 0 -or $pesterFailed -gt 0) { $failed = $true }
 } else {
-  Write-Host 'Pester not installed; skipping' -ForegroundColor Yellow
+  Write-Host 'Pester 5.x not installed; skipping' -ForegroundColor Yellow
 }
 
 & (Join-Path $RepoRoot 'scripts/generate-synthetic-data.ps1')

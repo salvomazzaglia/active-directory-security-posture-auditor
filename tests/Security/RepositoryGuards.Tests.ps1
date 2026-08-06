@@ -1,4 +1,6 @@
-$RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
+BeforeAll {
+    $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
+}
 Describe 'Repository guards' {
     It 'examples use example.invalid domain' {
         $snap = Get-Content (Join-Path $RepoRoot 'examples/synthetic-snapshot/snapshot.json') -Raw

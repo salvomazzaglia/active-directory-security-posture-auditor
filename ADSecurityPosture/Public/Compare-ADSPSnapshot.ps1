@@ -54,7 +54,7 @@ function Compare-ADSPSnapshot {
     $comparison.privileged_members_removed = @($bPriv | Where-Object { $_ -notin $aPriv })
 
     if ($OutputDirectory) {
-        $out = Assert-ADSPSafePath -Path $OutputDirectory -IsOutput -AllowAbsolute
+        $out = Assert-ADSPSafePath -Path $OutputDirectory -IsOutput -AllowAbsolute -AllowOverwrite
         if (-not (Test-Path -LiteralPath $out)) { New-Item -ItemType Directory -Path $out -Force | Out-Null }
         New-ADSPJsonReport -Report $comparison -Path (Join-Path $out 'comparison.json')
     }

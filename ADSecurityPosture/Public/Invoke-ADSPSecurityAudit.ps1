@@ -120,7 +120,7 @@ function Invoke-ADSPSecurityAudit {
     $report.exit_code = Get-ADSPExitCode -Report $report -FailOn $FailOn -MinimumScore $MinimumScore
 
     if ($OutputDirectory) {
-        $out = Assert-ADSPSafePath -Path $OutputDirectory -IsOutput -AllowAbsolute
+        $out = Assert-ADSPSafePath -Path $OutputDirectory -IsOutput -AllowAbsolute -AllowOverwrite
         if (-not (Test-Path -LiteralPath $out)) { New-Item -ItemType Directory -Path $out -Force | Out-Null }
         Export-ADSPReport -AuditResult $report -OutputDirectory $out -Format $Format -PrivacyMode $PrivacyMode
     }
