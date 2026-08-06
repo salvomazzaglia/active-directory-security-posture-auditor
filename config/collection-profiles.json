@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "profiles": {
+    "Minimal": {
+      "collectors": [
+        "forest-domain",
+        "password-policies",
+        "users",
+        "groups",
+        "privileged-membership",
+        "computers",
+        "domain-controllers",
+        "trusts"
+      ]
+    },
+    "Standard": {
+      "collectors": [
+        "forest-domain",
+        "password-policies",
+        "users",
+        "groups",
+        "privileged-membership",
+        "computers",
+        "domain-controllers",
+        "trusts",
+        "service-accounts",
+        "gmsa-metadata",
+        "kerberos-metadata",
+        "delegation",
+        "authentication-policies",
+        "laps-metadata",
+        "critical-object-acls"
+      ]
+    },
+    "Extended": {
+      "collectors": [
+        "forest-domain",
+        "password-policies",
+        "users",
+        "groups",
+        "privileged-membership",
+        "computers",
+        "domain-controllers",
+        "trusts",
+        "service-accounts",
+        "gmsa-metadata",
+        "kerberos-metadata",
+        "delegation",
+        "authentication-policies",
+        "laps-metadata",
+        "laps-permissions",
+        "critical-object-acls",
+        "gpo-metadata",
+        "gpo-security-settings"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "notes": "Operator-maintained allowlist. The toolkit does not claim lifecycle status from OS name alone.",
+  "allowed_operating_systems": [
+    "Windows Server 2019*",
+    "Windows Server 2022*",
+    "Windows Server 2025*",
+    "Windows 10*",
+    "Windows 11*"
+  ]
+}

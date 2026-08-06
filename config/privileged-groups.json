@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "groups": [
+    {
+      "id": "enterprise-admins",
+      "well_known": "EnterpriseAdmins",
+      "rid": 519,
+      "tier": "highest"
+    },
+    {
+      "id": "domain-admins",
+      "well_known": "DomainAdmins",
+      "rid": 512,
+      "tier": "highest"
+    },
+    {
+      "id": "schema-admins",
+      "well_known": "SchemaAdmins",
+      "rid": 518,
+      "tier": "highest"
+    },
+    {
+      "id": "administrators",
+      "well_known": "Administrators",
+      "sid": "S-1-5-32-544",
+      "tier": "highest"
+    },
+    {
+      "id": "account-operators",
+      "well_known": "AccountOperators",
+      "sid": "S-1-5-32-548",
+      "tier": "operator"
+    },
+    {
+      "id": "backup-operators",
+      "well_known": "BackupOperators",
+      "sid": "S-1-5-32-551",
+      "tier": "operator"
+    },
+    {
+      "id": "server-operators",
+      "well_known": "ServerOperators",
+      "sid": "S-1-5-32-549",
+      "tier": "operator"
+    },
+    {
+      "id": "print-operators",
+      "well_known": "PrintOperators",
+      "sid": "S-1-5-32-550",
+      "tier": "operator"
+    },
+    {
+      "id": "domain-controllers",
+      "well_known": "DomainControllers",
+      "rid": 516,
+      "tier": "infrastructure"
+    },
+    {
+      "id": "gpo-creator-owners",
+      "well_known": "GroupPolicyCreatorOwners",
+      "rid": 520,
+      "tier": "operator"
+    },
+    {
+      "id": "protected-users",
+      "well_known": "ProtectedUsers",
+      "rid": 525,
+      "tier": "protective"
+    },
+    {
+      "id": "key-admins",
+      "well_known": "KeyAdmins",
+      "rid": 526,
+      "tier": "specialized"
+    },
+    {
+      "id": "enterprise-key-admins",
+      "well_known": "EnterpriseKeyAdmins",
+      "rid": 527,
+      "tier": "specialized"
+    },
+    {
+      "id": "dns-admins",
+      "well_known": "DnsAdmins",
+      "enabled": false,
+      "tier": "optional",
+      "notes": "Enable only when the group exists and is in scope."
+    }
+  ]
+}

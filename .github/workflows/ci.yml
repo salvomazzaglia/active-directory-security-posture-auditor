@@ -1,0 +1,88 @@
+# GitHub-hosted runners ONLY. Never self-hosted. Never live AD collection.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  windows-ps7:
+    name: Windows PowerShell 7
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install Pester and PSScriptAnalyzer
+        shell: pwsh
+        run: |
+          Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+          Install-Module Pester -RequiredVersion 5.7.1 -Force -SkipPublisherCheck -Scope CurrentUser
+          Install-Module PSScriptAnalyzer -RequiredVersion 1.24.0 -Force -SkipPublisherCheck -Scope CurrentUser
+      - name: Run CI
+        shell: pwsh
+        run: pwsh -NoProfile -File ./scripts/run-ci.ps1
+      - name: Upload synthetic CI artifacts
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: synthetic-reports-windows-ps7
+          path: |
+            temp/ci-baseline/**
+            temp/ci-comparison/**
+          if-no-files-found: ignore
+
+  windows-ps51:
+    name: Windows PowerShell 5.1
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install Pester 5
+        shell: powershell
+        run: |
+          Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+          Install-Module Pester -RequiredVersion 5.7.1 -Force -SkipPublisherCheck -Scope CurrentUser
+          Install-Module PSScriptAnalyzer -RequiredVersion 1.24.0 -Force -SkipPublisherCheck -Scope CurrentUser
+      - name: Module import and offline audit (PS 5.1)
+        shell: powershell
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Import-Module .\ADSecurityPosture\ADSecurityPosture.psd1 -Force
+          if ((Get-ADSPVersion) -ne '1.0.0') { throw 'version mismatch' }
+          $null = New-ADSPSyntheticSnapshot -OutputDirectory temp/ps51-synth
+          $r = Invoke-ADSPSecurityAudit -SnapshotPath examples/synthetic-snapshot/snapshot.json -PolicyPath config/baseline.policy.json -OutputDirectory temp/ps51-audit -Format Json -PrivacyMode Masked
+          Write-Host "PS5.1 audit exit=$($r.exit_code) score=$($r.score)"
+          if ($r.synthetic -ne $true) { throw 'expected synthetic' }
+
+  ubuntu-ps7:
+    name: Ubuntu PowerShell 7 offline
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install PowerShell modules
+        shell: pwsh
+        run: |
+          Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+          Install-Module Pester -RequiredVersion 5.7.1 -Force -SkipPublisherCheck -Scope CurrentUser
+          Install-Module PSScriptAnalyzer -RequiredVersion 1.24.0 -Force -SkipPublisherCheck -Scope CurrentUser
+      - name: Offline synthetic audit
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Import-Module ./ADSecurityPosture/ADSecurityPosture.psd1 -Force
+          Get-ADSPVersion
+          $plan = Get-ADSPCollectionPlan -Domain corp.example.invalid -CollectionProfile Standard
+          if ($plan.executes_query) { throw 'plan must not execute queries' }
+          $r = Invoke-ADSPSecurityAudit -SnapshotPath examples/synthetic-snapshot/snapshot.json -PolicyPath config/baseline.policy.json -OutputDirectory temp/ubuntu-audit -Format All -PrivacyMode Masked
+          Write-Host "Ubuntu offline audit score=$($r.score) findings=$($r.findings.Count)"
+          Invoke-Pester -Path tests/Unit,tests/Security -Output Detailed

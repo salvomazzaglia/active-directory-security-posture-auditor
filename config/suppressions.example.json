@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "suppressions": [
+    {
+      "id": "SUP-EXAMPLE-001",
+      "rule_id": "ADSP-DOM-003",
+      "target_fingerprint": "forest:corp.example.invalid",
+      "justification": "Synthetic demonstration suppression with documented review.",
+      "owner_label": "synthetic-owner",
+      "created_at_utc": "2026-01-01T00:00:00Z",
+      "expires_at_utc": "2027-01-01T00:00:00Z",
+      "review_reference": "SYNTHETIC-REVIEW-001",
+      "enabled": true
+    }
+  ]
+}

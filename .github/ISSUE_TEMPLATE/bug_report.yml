@@ -1,0 +1,17 @@
+name: Bug report
+description: Report a defect in offline analysis or documentation
+labels: [bug]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Do not include real directory data or credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction (synthetic only)
+    validations:
+      required: true

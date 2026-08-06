@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/salvomazzaglia/active-directory-security-posture-auditor/schemas/suppression.schema.json",
+  "title": "Suppression entry",
+  "type": "object",
+  "additionalProperties": true
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "strict",
+  "display_name": "strict",
+  "scoring": {
+    "starting_score": 100,
+    "deductions": {
+      "Critical": 25,
+      "High": 15,
+      "Medium": 7,
+      "Low": 2,
+      "Informational": 0
+    },
+    "grades": {
+      "A": [
+        90,
+        100
+      ],
+      "B": [
+        80,
+        89
+      ],
+      "C": [
+        70,
+        79
+      ],
+      "D": [
+        50,
+        69
+      ],
+      "F": [
+        0,
+        49
+      ]
+    },
+    "fail_on_default": "High",
+    "minimum_score_default": 0
+  },
+  "thresholds": {
+    "min_domain_functional_level": "Windows2016Domain",
+    "min_forest_functional_level": "Windows2016Forest",
+    "min_password_length": 14,
+    "min_password_history": 24,
+    "max_password_age_days": 365,
+    "max_privileged_password_age_days": 90,
+    "max_krbtgt_password_age_days": 180,
+    "max_machine_account_quota": 0,
+    "lockout_threshold_min": 5,
+    "lockout_threshold_max": 10,
+    "lockout_duration_minutes_min": 15,
+    "max_inactive_days": 90,
+    "max_direct_highest_privilege_members": 3,
+    "max_transitive_highest_privilege_members": 8,
+    "max_membership_nesting_depth": 4,
+    "expect_windows_laps": true,
+    "require_ldap_signing": true,
+    "require_channel_binding": true,
+    "allow_critical_suppressions": false,
+    "require_protected_users_for_eligible_admins": true,
+    "expect_aes_kerberos": true,
+    "expect_narrow_laps_permissions": true
+  },
+  "severity_overrides": {},
+  "never_downgrade_rules": [],
+  "enabled_rules": "all",
+  "notes": "strict policy profile for Active Directory security-posture assessment. Score is a prioritization aid, not certification."
+}

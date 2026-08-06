@@ -1,0 +1,11 @@
+name: Feature request
+description: Propose an enhancement within v1.0 safety boundaries
+labels: [enhancement]
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Must remain read-only and must not retrieve secrets.
+    validations:
+      required: true

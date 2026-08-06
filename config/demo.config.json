@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0.0",
+  "inherits": "default.config.json",
+  "privacy_mode_default": "Masked",
+  "demo_domain_label": "corp.example.invalid",
+  "demo_forest_label": "corp.example.invalid",
+  "notes": "Demo configuration for synthetic offline analysis only."
+}

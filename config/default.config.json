@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "tool_name": "active-directory-security-posture-auditor",
+  "tool_version": "1.0.0",
+  "default_policy": "config/baseline.policy.json",
+  "rules_path": "config/rules.json",
+  "collection_profiles_path": "config/collection-profiles.json",
+  "privileged_groups_path": "config/privileged-groups.json",
+  "critical_objects_path": "config/critical-objects.json",
+  "sensitive_attributes_path": "config/sensitive-attributes.json",
+  "privacy_mode_default": "Masked",
+  "fail_on_default": "High",
+  "minimum_score_default": 0,
+  "max_objects_default": 50000,
+  "max_membership_depth": 8,
+  "refuse_snapshot_hash_mismatch": true,
+  "synthetic_marker": "SYNTHETIC DEMONSTRATION DATA"
+}

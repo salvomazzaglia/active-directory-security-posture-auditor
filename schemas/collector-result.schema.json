@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/salvomazzaglia/active-directory-security-posture-auditor/schemas/collector-result.schema.json",
+  "title": "Collector result document",
+  "type": "object",
+  "additionalProperties": true
+}

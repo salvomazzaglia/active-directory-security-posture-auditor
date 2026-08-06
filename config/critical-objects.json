@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "objects": [
+    {
+      "id": "domain-root",
+      "object_class": "domainDNS",
+      "relative_path": "",
+      "rights_of_interest": [
+        "GenericAll",
+        "WriteDacl",
+        "WriteOwner",
+        "ExtendedRight"
+      ]
+    },
+    {
+      "id": "adminsdholder",
+      "object_class": "container",
+      "relative_path": "CN=AdminSDHolder,CN=System",
+      "rights_of_interest": [
+        "GenericAll",
+        "WriteDacl",
+        "WriteOwner",
+        "WriteProperty"
+      ]
+    },
+    {
+      "id": "domain-admins",
+      "object_class": "group",
+      "well_known": "DomainAdmins",
+      "rights_of_interest": [
+        "GenericAll",
+        "WriteProperty",
+        "WriteDacl"
+      ]
+    },
+    {
+      "id": "enterprise-admins",
+      "object_class": "group",
+      "well_known": "EnterpriseAdmins",
+      "rights_of_interest": [
+        "GenericAll",
+        "WriteProperty",
+        "WriteDacl"
+      ]
+    },
+    {
+      "id": "domain-controllers-ou",
+      "object_class": "organizationalUnit",
+      "relative_path": "OU=Domain Controllers",
+      "rights_of_interest": [
+        "GenericAll",
+        "CreateChild",
+        "WriteDacl"
+      ]
+    },
+    {
+      "id": "policies-container",
+      "object_class": "container",
+      "relative_path": "CN=Policies,CN=System",
+      "rights_of_interest": [
+        "GenericAll",
+        "WriteDacl",
+        "WriteOwner"
+      ]
+    }
+  ]
+}

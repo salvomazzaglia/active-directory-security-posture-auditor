@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "blocked_attributes": [
+    "unicodePwd",
+    "dBCSPwd",
+    "ntPwdHistory",
+    "lmPwdHistory",
+    "supplementalCredentials",
+    "currentValue",
+    "priorValue",
+    "pekList",
+    "userPassword",
+    "clearTextPassword",
+    "ms-Mcs-AdmPwd",
+    "msLAPS-Password",
+    "msLAPS-EncryptedPassword",
+    "msLAPS-EncryptedPasswordHistory",
+    "msDS-ManagedPassword",
+    "msDS-ManagedPasswordId",
+    "msDS-ManagedPasswordPreviousId"
+  ],
+  "credential_clue_allowlisted_attributes": [
+    "description",
+    "info",
+    "comment",
+    "adminDescription"
+  ],
+  "notes": "Live collectors must never request or serialize blocked attributes. Matching is case-insensitive."
+}
