@@ -79,9 +79,11 @@ if (`$p.FailedCount -gt 0) { exit 1 } else { exit 0 }
   Write-Host 'Pester 5.x not installed; skipping' -ForegroundColor Yellow
 }
 
-& (Join-Path $RepoRoot 'scripts/generate-synthetic-data.ps1')
+& (Join-Path $RepoRoot 'scripts/generate-synthetic-data.ps1') -OutputDirectory (Join-Path $RepoRoot 'temp/ci-synth-gen')
 $sv = Test-ADSPSnapshot -SnapshotPath (Join-Path $RepoRoot 'examples/synthetic-snapshot/snapshot.json')
 if (-not $sv.valid) { $failed = $true; Write-Host ($sv.errors -join '; ') -ForegroundColor Red }
+$svGen = Test-ADSPSnapshot -SnapshotPath (Join-Path $RepoRoot 'temp/ci-synth-gen/snapshot.json')
+if (-not $svGen.valid) { $failed = $true; Write-Host ('Generated snapshot invalid: ' + ($svGen.errors -join '; ')) -ForegroundColor Red }
 
 $baseline = Invoke-ADSPSecurityAudit -SnapshotPath (Join-Path $RepoRoot 'examples/synthetic-snapshot/snapshot.json') -PolicyPath (Join-Path $RepoRoot 'config/baseline.policy.json') -OutputDirectory (Join-Path $RepoRoot 'temp/ci-baseline') -Format All -PrivacyMode Masked
 $strict = Invoke-ADSPSecurityAudit -SnapshotPath (Join-Path $RepoRoot 'examples/synthetic-snapshot/snapshot.json') -PolicyPath (Join-Path $RepoRoot 'config/strict.policy.json') -OutputDirectory (Join-Path $RepoRoot 'temp/ci-strict') -Format Json -PrivacyMode Masked
